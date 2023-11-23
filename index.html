@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcular IMC</title>
     <link rel="stylesheet" href="index.css">
+    <title>Calcular IMC</title>
 </head>
+
 <body>
     <h1>Calcular IMC</h1>
+    <p>Clique no botão abaixo para calcular o IMC.</p>
+    <button onclick="calcularIMC()">Calcular</button>
 
-    <h4 id="heading"></h4>
-    <p id="imc-output"></p>
-    <p id="message"></p>
+    <h1 id="resultado"></h1>
+    <h3 id="h3"></h3>
+    <p id="imcResult"></p>
+    <p id="classMessage"></p>
 
-    <button onclick="calcularIMC()">Calcular Novamente</button>
+    <div id="buttonDiv">
+        <table id="tabela">
+            <thead id="head">
+                <tr id="row1">
+                    <th id="nome"></th>
+                    <th id="imc"></th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+
+        <button onclick="calcularIMC()">Adicionar outro usuário</button>
+
+        <h2>Resumo dos Dados</h2>
+        <p id="quantUsuarios">Quantidade de Usuários: 0</p>
+        <p id="mediaIMC">Média IMC: 0</p>
+        <p id="maiorIMC">Maior IMC: 0</p>
+
+        <button onclick="reload()">Recomeçar</button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button onclick="alerta()">Botão super duper secreto apenas para os olhos de Otávio</button>
+    </div>
 
     <script src="index.js"></script>
 </body>
+
 </html>
